@@ -1,0 +1,183 @@
+Roy Smart
+Montana State University
+CSCI 305 Concepts of Programming Languages
+Lab 4 'Prolog Parentage'
+Lab Questions
+
+Question 1: What is result of query ?- father(X, 'Queen Elizabeth II').
+X = 'King George VI' ;
+
+Question 2: What is result of query ?- grandmother(X, 'Queen Elizabeth II').
+X = 'Mary, Princess of Teck' ;
+
+Question 3: What is result of query ?- grandfather(X, 'Queen Elizabeth II').
+X = 'King George V' ;
+
+Question 4: What is result of query ?- grandparent(X, 'Queen Elizabeth II').
+X = 'King George V' ;
+X = 'Mary, Princess of Teck' ;
+
+Question 5: What is result of query ?- grandparent('Queen Elizabeth II', X).
+X = 'Prince William, Duke of Cambridge' ;
+X = 'Prince Henry of Wales' ;
+X = 'Princess Beatrice of York' ;
+X = 'Peter Phillips' ;
+X = 'Zara Phillips' ;
+X = 'Lady Louise Windsor' ;
+X = 'James, Viscount Severn' ;
+
+Question 6: What is result of query ?- sibling(X, 'Queen Elizabeth II').
+X = 'Princess Margaret' ;
+
+Question 7: What is result of query ?- son(X, 'Queen Elizabeth II').
+X = 'Edward, Earl of Wessex' ;
+X = 'Charles, Prince of Wales' ;
+X = 'Andrew, Duke of York'.
+
+Question 8: What is result of query ?- daughter(X, 'Queen Elizabeth II').
+X = 'Anne, Princess Royal' ;
+
+Question 9: What is result of query ?- aunt(X, 'Lady Diana Spencer').
+false.
+
+Question 10: What is result of query
+?- spouse(X, 'Prince William, Duke of Cambridge').
+X = 'Catherine Middleton'.
+
+Question 11: What is result of query ?- ancestor(X, 'Prince Henry of Wales').
+X = 'Charles, Prince of Wales' ;
+X = 'Lady Diana Spencer' ;
+X = 'King George III' ;
+X = 'King George III' ;
+X = 'Charlotte of Mecklenburg-Strelitz' ;
+X = 'Charlotte of Mecklenburg-Strelitz' ;
+X = 'Edward, Duke of Kent' ;
+X = 'Edward, Duke of Kent' ;
+X = 'Princess Victoria of Saxe-Coburg-Saalfeld' ;
+X = 'Princess Victoria of Saxe-Coburg-Saalfeld' ;
+X = 'Franz, Duke of Saxe-Coburg-Saalfeld' ;
+X = 'Franz, Duke of Saxe-Coburg-Saalfeld' ;
+X = 'Augusta Reuss of Ebersdorf und Lobenstein' ;
+X = 'Augusta Reuss of Ebersdorf und Lobenstein' ;
+X = 'Franz, Duke of Saxe-Coburg-Saalfeld' ;
+X = 'Franz, Duke of Saxe-Coburg-Saalfeld' ;
+X = 'Augusta Reuss of Ebersdorf und Lobenstein' ;
+X = 'Augusta Reuss of Ebersdorf und Lobenstein' ;
+X = 'Ernest I, Duke of Saxe-Coburg and Gotha' ;
+X = 'Ernest I, Duke of Saxe-Coburg and Gotha' ;
+X = 'Princess Louise of Saxe-Gotha-Altenburg' ;
+X = 'Princess Louise of Saxe-Gotha-Altenburg' ;
+X = 'Prince Albert' ;
+X = 'Queen Victoria' ;
+X = 'Prince Albert' ;
+X = 'Queen Victoria' ;
+X = 'Princess Alice' ;
+X = 'Louis IV, Grand Duke of Hesse' ;
+X = 'King Edward VII' ;
+X = 'Princess Alexandra of Denmark' ;
+X = 'King George V' ;
+X = 'Mary, Princess of Teck' ;
+X = 'Prince Louis of Battenberg' ;
+X = 'Princess Victoria of Hesse' ;
+X = 'Andrew, Prince of Greece' ;
+X = 'Alice, Princess of Baltenberg' ;
+X = 'King George VI' ;
+X = 'Lady Elizabeth Bowes-Lyon' ;
+X = 'Prince Phillip, Duke of Edinburgh' ;
+X = 'Queen Elizabeth II' ;
+
+Question 12: What is result of query ?- descendant('Queen Victoria', Y).
+Y = 'Edward, Duke of Kent' ;
+Y = 'Princess Victoria of Saxe-Coburg-Saalfeld' ;
+Y = 'King George III' ;
+Y = 'Charlotte of Mecklenburg-Strelitz' ;
+Y = 'Franz, Duke of Saxe-Coburg-Saalfeld' ;
+Y = 'Augusta Reuss of Ebersdorf und Lobenstein' ;
+
+Question 13: What is result of query
+?- older('Prince Henry of Wales', 'Prince William, Duke of Cambridge').
+false.
+
+Question 14: What is result of query ?- older(X, 'Queen Elizabeth II').
+X = 'King George III' ;
+X = 'Charlotte of Mecklenburg-Strelitz' ;
+X = 'Franz, Duke of Saxe-Coburg-Saalfeld' ;
+X = 'Augusta Reuss of Ebersdorf und Lobenstein' ;
+X = 'King George IV' ;
+X = 'King William IV' ;
+X = 'Edward, Duke of Kent' ;
+X = 'Caroline of Brunswick' ;
+X = 'Ernest I, Duke of Saxe-Coburg and Gotha' ;
+X = 'Princess Victoria of Saxe-Coburg-Saalfeld' ;
+X = 'Princess Louise of Saxe-Gotha-Altenburg' ;
+X = 'Prince Albert' ;
+X = 'Queen Victoria' ;
+X = 'King Edward VII' ;
+X = 'Prince Alfred, Duke of Edinburgh' ;
+X = 'Prince Arthur' ;
+X = 'Prince Leopold' ;
+X = 'Victoria, Princess Royal' ;
+X = 'Princess Alice' ;
+X = 'John Campbell, Duke of Argyll' ;
+X = 'Princess Helena' ;
+X = 'Princess Louise' ;
+X = 'Princess Beatrice' ;
+X = 'Henry, Prince of Battenberg' ;
+X = 'Louis IV, Grand Duke of Hesse' ;
+X = 'Princess Helena of Waldeck and Pyrmont' ;
+X = 'Princess Victoria of Hesse' ;
+X = 'Prince Louis of Battenberg' ;
+X = 'Princess Louise of Prussia' ;
+X = 'Princess Alexandra of Denmark' ;
+X = 'Albert, Duke of Clarence' ;
+X = 'Maria, Grand duchess of Russia' ;
+X = 'King George V' ;
+X = 'Prince John' ;
+X = 'Princess Victoria' ;
+X = 'Louise, Princess Royal' ;
+X = 'Princess Maud' ;
+X = 'Haakon VII, King of Norway' ;
+X = 'Prince Christian of Schleswig-Holstein' ;
+X = 'Frederick III, German Emperor' ;
+X = 'Alexander Duff, Duke of Fife' ;
+X = 'Mary, Princess of Teck' ;
+X = 'King Edward VIII' ;
+X = 'King George VI' ;
+X = 'Henry, Duke of Gloucester' ;
+X = 'Prince George, Duke of Kent' ;
+X = 'Prince John of the United Kingdom' ;
+X = 'Mary, Princess Royal' ;
+X = 'Wallis Simpson' ;
+X = 'Alice, Duchess of Gloucester' ;
+X = 'Charles Lascelles, Earl of Harewood' ;
+X = 'Marina, Princess of Greece' ;
+X = 'Alice, Princess of Baltenberg' ;
+X = 'Andrew, Prince of Greece' ;
+X = 'Prince Phillip, Duke of Edinburgh' ;
+X = 'Lady Elizabeth Bowes-Lyon' ;
+X = 'George Lascelles' ;
+X = 'Gerald Lascelles' ;
+X = 'Angela Dowding'.
+
+Question 15: What is result of query
+?- regentWhenBorn(X, 'Queen Elizabeth II').
+X = 'King George V' .
+
+Question 16: Name something you like about Prolog. Explain.
+I like its simplicity. If you know how to phrase the question you want to answer,
+prolog will figure out the rest for you.
+
+Question 17: Name something you dislike about Prolog. Explain.
+The syntax is hard for newbies.
+
+Question 18: Did you enjoy this lab? Which aspects did you like and/or dislike?
+I enjoyed the use of logic to solve these problems, I found it very satisfying. 
+I also enjoyed learning a little history along the way.
+
+Question 19: Approximately how many hours did you spend on this lab?
+I spent approximately 2 hours. Most of the time was spent figuring out that
+you could put two rules with the same name back to back.
+
+Question 20: Do you think you will use Prolog again? For which type(s) of project(s)?
+I feel I would use prolog again, especially if I have a database of rules that I need
+to parse. I get the feeling that prolog is very good at this sort of thing.
